@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../estilos/login.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c7e6a57cdf.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        
+
+</head>
+
+<body>
+    <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <div class="col-12 user-img">
+                    <img src="../imagenes/avatar-equipo.png" alt="">
+                </div>
+
+
+                <form autocomplete="off" class="col-12">
+                    <div class="form-group" id="user-group">
+                        <input class="form-control" type="text" id="usuario" name="usuario"
+                            placeholder="Nombre de usuario">
+                    </div>
+
+                    <div class="form-group" id="contrasena-group">
+                        <input class="form-control" type="password" id="contrasena" name="contrasena"
+                            placeholder="Escriba contraseña" maxlength="8">
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="Ingresar()"><i
+                            class="fas fa-sign-in-alt"></i> Ingresar</button>
+
+                </form>
+                <div class="col-12 forgot">
+                    <a href="#">Recordar contraseña</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/funciones.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

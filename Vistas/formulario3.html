@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../estilos/formulario2.css">
+  <script src="javascript/funciones.js"></script>
+  <script src="https://kit.fontawesome.com/c7e6a57cdf.js"></script>
+  <script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="fontawesome-free-5.10.1-web/css/solid.css">
+
+  
+</head>
+<body>
+<div class="container" align="center">
+
+<form  class="frm_registro" method="POST" action="./index.php">
+
+  <div class="col-sm-5">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputState">Documento</label>
+        <select id="Tipo_Doc" name="Tipo_Doc" class="form-control">
+          <option selected value="">Seleccione</option>
+          <option value="cc">Cédula</option>
+          <option value="ps">Pasaporte</option>
+
+        </select>
+      </div>
+      <div class="form-group col-md-6" id="document-form">
+        <label for="inputEmail4">N° Documento</label>
+        <input type="text" class="form-control" id="documento" name="documento" maxlength="10"
+          placeholder="N° de identificacion" onkeypress="return soloNumeros(event)">
+      </div>
+      <div class="form-group col-md-6" id="email-group">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+      </div>
+      <div class="form-group col-md-6" id="password-form">
+        <label for="inputPassword4">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" maxlength="8">
+      </div>
+    </div>
+    <div class="form-group" id="usuario-form">
+      <label for="inputAddress">Nombres y Apellidos</label>
+      <input type="text" class="form-control" id="nombres" name="nombres"
+        placeholder="Nombres y apellidos completos" onkeypress="return soloLetras(event)" maxlength="20">
+      <p style="color: red" name="respuesta" id="respuesta"></p>
+    </div>
+    <div class="form-group" id="direccion-form">
+      <label for="inputAddress2">Direccion</label>
+      <input type="text" class="form-control" id="direccion" name="direccion"
+        placeholder="Calle/Carrera/Apartamento" maxlength="12">
+    </div>
+    
+    <div class="form-row">
+      <div class="form-group col-md-4" id="ciudad-form">
+        <label for="inputCity">Edad</label>
+        <input type="text" class="form-control" id="edad" name="edad" onkeypress="return soloNumeros(event)" maxlength="2">
+        <p  style="color: red" name="respuesta" id="respuesta"></p>
+      </div>
+
+      <div class="form-group col-md-8" id="movil-form">
+        <label for="inputZip">Movil</label>
+        <input type="text" class="form-control" id="movil" name="movil" onkeypress="return soloNumeros(event)" maxlength="15">
+        <p style="color: red" name="otro" id="otro"></p>
+      </div>
+
+      <div class="form-group col-md-6" id="usuario-form">
+      <label for="inputAddress2">Usuario</label>
+      <input type="text" class="form-control" id="usuario" name="usuario"
+        placeholder="Ingrese un usuario" maxlength="12">
+    </div>
+      <div class="form-group col-md-6">
+        <label for="inputState">Cargo</label>
+        <select id="Tipo_Car" name="Tipo_Car" class="form-control">
+          <option selected value="">Seleccione</option>
+          <option value="coo">Coordinador</option>
+          <option value="oper">Operador</option>
+
+        </select>
+      </div>
+    </div>
+
+    <input type="submit" class="btn btn-primary" id="registrar" name="registrar">
+  </div>
+</form>
+<p align="center" name="mensaje_validacion" id="mensaje_validacion"></p>
+</div>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/45102d11bb.js" crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <header class="header">
+            <div class="header__search">
+
+                <form class="form-inline md-form form-sm mt-0">
+                    <i class="fas fa-search" style="color: white" aria-hidden="true"></i>
+                    <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+            <div class="header__avatar"><img src="img/img_avatar.png" style="border-radius:50%" class="avatar" alt="Usuario"></div>
+
+        </header>
+
+        <aside class="sidenav">
+            <div class="container-fluid">
+                <h2><i class="fas fa-phone-volume"></i> Operador
+                </h2>
+                <hr>
+            </div>
+
+            <ul class="sidenav__list">
+                <li class="sidenav__list-item"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Operadores</li>
+                <li class="sidenav__list-item"><i class="fa fa-phone-alt" aria-hidden="true"></i>&nbsp; Llamadas</li>
+                <li class="sidenav__list-item"><i class="fas fa-money-check "></i>&nbsp;Liquidaciones</li>
+                <li class="sidenav__list-item"><i class="fas fa-file-excel"></i>&nbsp;Archivo</li>
+                <li class="sidenav__list-item"></li>
+            </ul>
+            <div class="sidenav__close-icon">
+                <i class="fas fa-times"></i>
+            </div>
+
+
+        </aside>
+        <main class="main">
+            <div class="main-header">
+                <div class="main-header__heading">Hello User</div>
+                <div class="main-header__updates">Recent Items</div>
+            </div>
+            <div class="main-overview">
+                <div class="overviewcard">
+                    <div class="overviewcard__icon">Overview</div>
+                    <div class="overviewcard__info">Card</div>
+                </div>
+                <div class="overviewcard">
+                    <div class="overviewcard__icon">Overview</div>
+                    <div class="overviewcard__info">Card</div>
+                </div>
+                <div class="overviewcard">
+                    <div class="overviewcard__icon">Overview</div>
+                    <div class="overviewcard__info">Card</div>
+                </div>
+                <div class="overviewcard">
+                    <div class="overviewcard__icon">Overview</div>
+                    <div class="overviewcard__info">Card</div>
+                </div>
+            </div>
+            <div class="main-cards">
+                <div class="card">Card</div>
+                <div class="card">Card</div>
+                <div class="card">Card</div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__copyright" style="color: #fff">&copy; 2019 Sistema de Gestion de Telemercadeo</div>
+            <div class="footer__signature" style="color: #fff">Made with Sergio</div>
+        </footer>
+    </div>
+
+
+
+</body>
+<script>
+    const menuIconEl = $('.menu-icon');
+    const sidenavEl = $('.sidenav');
+    const sidenavCloseEl = $('.sidenav__close-icon');
+
+    // Add and remove provided class names
+    function toggleClassName(el, className) {
+        if (el.hasClass(className)) {
+            el.removeClass(className);
+        } else {
+            el.addClass(className);
+        }
+    }
+
+    // Open the side nav on click
+    menuIconEl.on('click', function() {
+        toggleClassName(sidenavEl, 'active');
+    });
+
+    // Close the side nav on click
+    sidenavCloseEl.on('click', function() {
+        toggleClassName(sidenavEl, 'active');
+    });
+
+
+    jQuery(document).ready(function() {
+
+        jQuery("#loader").fadeOut("slow");
+
+    });
+</script>
+
+
+
+</html>

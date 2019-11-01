@@ -1,0 +1,52 @@
+.form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 28px;
+    font-size: 22px;
+    padding-top: 35px;
+    }
+
+    .form-group#password-form::before{
+        content: "\f023";
+        }
+
+.form-group#email-group::before{
+    content: "\f1d8";
+    
+  }
+
+  .form-group#document-form::before{
+    content: "\f2c2";
+    
+  }
+
+  .form-group#password-form::before{
+        content: "\f023";
+       
+      }
+      .form-group#usuario-form::before{
+        content: "\f4ff";
+       
+      }
+      .form-group#direccion-form::before{
+        content: "\f276";
+       
+      }
+      .form-group#ciudad-form::before{
+        content: "\f64f";
+       
+      }
+      .form-group#movil-form::before{
+        content: "\f3cd";
+       
+      }
+
+
+      .form-group input{
+
+        height: 45px;
+        font-size: 17px;
+        padding-left: 54px;
+        border-radius: 5px;
+    }
+    
